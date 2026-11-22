@@ -74,7 +74,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl font-extrabold text-amber-100 tracking-tight mt-3"
           >
-            Connect with Espresso
+            Connect with Coffee Shop
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

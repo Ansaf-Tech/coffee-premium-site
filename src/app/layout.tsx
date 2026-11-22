@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ESPRESSO - Premium Coffee Experience",
+  title: "COFFEE SHOP | Premium Coffee Experience",
   description: "High-end international coffee brand.",
 };
 

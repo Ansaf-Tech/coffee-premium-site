@@ -85,7 +85,7 @@ const Gallery = () => {
             Visual Journal
           </span>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-amber-100 tracking-tight mt-3">
-            The Espresso Gallery
+            The Coffee Shop Gallery
           </h2>
           <p className="mt-4 text-base sm:text-lg text-amber-200/80">
             A visual tour through our passion for premium coffee, skilled craft, and cozy atmosphere.

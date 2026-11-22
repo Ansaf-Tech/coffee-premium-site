@@ -15,7 +15,7 @@ const Navbar = () => {
       className="fixed w-full z-50 top-0 left-0 backdrop-blur-sm border-b border-amber-50/10 bg-brown-950/80"
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <h1 className="text-2xl font-bold font-[family-name:var(--font-geist-mono)] text-amber-50">ESPRESSO</h1>
+        <h1 className="text-2xl font-bold font-[family-name:var(--font-geist-mono)] text-amber-50">COFFEE SHOP</h1>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-1">
@@ -43,7 +43,19 @@ const Navbar = () => {
             className="md:hidden bg-brown-950 border-t border-amber-50/10"
           >
             {navItems.map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-amber-100 hover:bg-brown-900">
+              <a key={item} href={`#${item.toLowerCase()}`} onClick={(e) => {
+  e.preventDefault();
+  setIsOpen(false);
+
+  window.setTimeout(() => {
+    document
+      .getElementById(item.toLowerCase())
+      ?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+  }, 350);
+}} className="block px-6 py-4 text-amber-100 hover:bg-brown-900">
                 {item}
               </a>
             ))}
