@@ -1,0 +1,27 @@
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 0 24px; /* Maintain horizontal padding */
+}
+
+/* Floating style that keeps existing background/blur but adds gap and radius */
+.floating-navbar {
+  margin-top: 20px; /* Gap from top */
+  border-radius: 999px; /* Fully curved */
+  
+  /* Inherit existing styles applied in component */
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+/* For JS Hide/Show functionality, adjust transform definition */
+.navbar-container {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-hidden {
+  transform: translateY(-100% - 20px); /* Adjust based on margin */
+}

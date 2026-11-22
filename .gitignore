@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local configuration backups
+next.config.backup.txt
+
+# Local project backups
+next.config backup.txt
+next.config.backup.txt
+src/components/CoffeeProcess_backup.tsx
+src/components/CoffeeProcess_manual_backup.tsx
